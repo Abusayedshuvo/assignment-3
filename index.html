@@ -38,20 +38,20 @@
 
 <body>
     <!-- header start -->
-    <header>
+    <header class="overflow-x-hidden">
         <!-- navbar start -->
-        <nav class="container mx-auto  lg:px-12 mt-5 md:mt-12">
+        <nav class="container mx-auto  lg:px-12 mt-5 md:mt-8 lg:mt-12">
             <div
-                class="navbar flex-row-reverse md:flex-row bg-transparent md:bg-fruitcolor rounded-full px-4 md:px-12 py-4 md:py-8">
+                class="navbar flex-row-reverse xl:flex-row bg-transparent xl:bg-fruitcolor rounded-full px-2 md:px-4 xl:px-12 py-4 xl:py-8 justify-between relative">
                 <div class="navbar-start">
-                    <ul class="menu menu-horizontal px-1 text-white text-lg font-medium hidden md:inline-flex">
+                    <ul class="menu menu-horizontal px-1 text-white text-lg font-medium hidden xl:inline-flex">
                         <li><a>Home </a></li>
                         <li><a>About Us </a></li>
                         <li><a>Shop </a></li>
                         <li><a>All Fruits </a></li>
                     </ul>
                     <div class="dropdown static">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden absolute top-10 right-0">
+                        <label tabindex="0" class="btn btn-ghost xl:hidden absolute top-10 right-0 md:right-10">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -74,13 +74,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-center lg:flex ">
+                <div class="navbar-center xl:flex ">
                     <a class="flex gap-3 items-center">
                         <img class="" src="images/logo.png" alt="">
-                        <span class="text-[20px] md:text-title text-black md:text-white font-bold"> Fruit Burst </span>
+                        <span class="text-[20px] xl:text-title text-black xl:text-white font-bold"> Fruit Burst </span>
                     </a>
                 </div>
-                <div class="navbar-end hidden md:flex">
+                <div class="navbar-end hidden xl:flex">
                     <div class="relative  md:w-3/4">
                         <input type="text" placeholder="Search here"
                             class="input input-bordered w-full  pl-8 rounded-full border-0 h-14" />
@@ -95,7 +95,7 @@
         </nav>
         <!-- navbar end -->
         <!-- banner start -->
-        <div class="container mx-auto lg:px-12 mt-3 md:mt-14">
+        <div class="container mx-auto px-3 md:px-0 lg:px-12 mt-3 md:mt-5 lg:mt-10 xl:mt-14">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full block">
                     <div class="slide1 text-center rounded-lg bg-cover"
@@ -207,39 +207,39 @@
     <!-- main section start -->
     <main>
         <!-- deal section start -->
-        <section class="deal container mx-auto lg:px-12 pt-36">
+        <section class="deal container mx-auto px-3 lg:px-12 pt-10 md:pt-20 lg:pt-36">
             <div class="flex flex-col md:flex-row justify-between items-center gap-14">
-                <div class="title flex-1">
-                    <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
+                <div class="title flex-1 text-center md:text-left">
+                    <h1 class="text-2xl md:text-5xl font-extrabold mb-6">Deal of the day</h1>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                         literature from 45 BC,
                         making it over 2000 years old.</p>
                 </div>
                 <div class="countdown-area flex-1 text-right">
-                    <div class="grid grid-flow-col gap-8 text-center auto-cols-max justify-end">
+                    <div class="grid grid-flow-col gap-3 md:gap-8 text-center auto-cols-max justify-end">
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl font-black mb-2">
+                            <span class="countdown text-2xl md:text-5xl font-black mb-2">
                                 <span style="--value:29;"> </span>
                             </span>
                             Days
                         </div>
                         <i class="fa-solid fa-ellipsis-vertical mt-3"></i>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl font-black mb-2">
+                            <span class="countdown text-2xl md:text-5xl font-black mb-2">
                                 <span style="--value:15;"></span>
                             </span>
                             Hours
                         </div>
                         <i class="fa-solid fa-ellipsis-vertical mt-3"></i>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl font-black mb-2">
+                            <span class="countdown text-2xl md:text-5xl font-black mb-2">
                                 <span style="--value:25;"></span>
                             </span>
                             Minutes
                         </div>
                         <i class="fa-solid fa-ellipsis-vertical mt-3"></i>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl font-black mb-2">
+                            <span class="countdown text-2xl md:text-5xl font-black mb-2">
                                 <span id="counterElement" style="--value:48;"></span>
                             </span>
                             Seconds
@@ -248,11 +248,12 @@
                 </div>
             </div>
             <!-- deal cards -->
-            <div class="deal-cards grid grid-cols-1 md:grid-cols-2 d- lg:grid-cols-4 gap-6 mt-12">
+            <div class="deal-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mt-12">
                 <!-- deal single card -->
                 <div class="deal-card rounded-lg border p-12 text-center space-y-8">
                     <img src="images/fruit6.png" alt="Fruits" class=" mx-auto">
                     <h3 class="text-2xl font-bold">12.90$ - 18.85$</h3>
+                    <hr>
                     <p class="text-slate-400 font-medium">Apples</p>
                     <div class="rating rating-md rating-half">
                         <input type="radio" name="rating-10" class="rating-hidden" />
@@ -316,6 +317,7 @@
                 <div class="deal-card rounded-lg border p-12 text-center space-y-8">
                     <img src="images/fruit7.png" alt="Fruits" class=" mx-auto">
                     <h3 class="text-2xl font-bold">12.90$ - 18.85$</h3>
+                    <hr>
                     <p class="text-slate-400 font-medium">Orange</p>
                     <div class="rating rating-md rating-half">
                         <input type="radio" name="rating-12" class="rating-hidden" />
@@ -378,6 +380,7 @@
                 <div class="deal-card rounded-lg border p-12 text-center space-y-8">
                     <img src="images/fruit8.png" alt="Fruits" class=" mx-auto">
                     <h3 class="text-2xl font-bold">12.90$ - 18.85$</h3>
+                    <hr>
                     <p class="text-slate-400 font-medium">Red Dragon</p>
                     <div class="rating rating-md rating-half">
                         <input type="radio" name="rating-13" class="rating-hidden" />
@@ -440,6 +443,7 @@
                 <div class="deal-card rounded-lg border p-12 text-center space-y-8">
                     <img src="images/fruit9.png" alt="Fruits" class=" mx-auto">
                     <h3 class="text-2xl font-bold">12.90$ - 18.85$</h3>
+                    <hr>
                     <p class="text-slate-400 font-medium">Banana</p>
                     <div class="rating rating-md rating-half">
                         <input type="radio" name="rating-14" class="rating-hidden" />
@@ -508,17 +512,17 @@
         <!-- deal section end -->
 
         <!-- team section start -->
-        <section class="teams container mx-auto lg:px-12 pt-20 md:pt-36">
+        <section class="teams container mx-auto lg:px-12 pt-20 md:pt-36 px-3 md:px-0">
             <div class=" text-center rounded-lg bg-cover bg-center" style="background-image: url(images/banner1.png);">
                 <div class="hero-overlay bg-[#121212b3] py-20 lg:py-32 text-white  rounded-lg">
-                    <div class=" max-w-2xl mx-auto space-y-4 lg:space-y-7">
+                    <div class="px-3 max-w-2xl mx-auto space-y-4 lg:space-y-7">
                         <h2 class="text-2xl lg:text-5xl font-extrabold">Meet the team section</h2>
                         <p class="text-base font-medium">Contrary to popular belief, is not simply random text.
                             It has roots in a piece of classical Latin literature from 45 BC,
                             making it over 2000 years old.</p>
                     </div>
                     <div
-                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-10 lg:gap-20 px-10 md:px-20 lg:px-56">
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mt-12 gap-10 lg:gap-20 px-10 md:px-20 lg:px-56">
                         <!-- team member one -->
                         <div class="team-member">
                             <img class="mx-auto" src="images/member1.png" alt="">
@@ -570,8 +574,8 @@
         <!-- team section end -->
 
         <!-- why choose us section start -->
-        <section class="teams container mx-auto lg:px-12 pt-36">
-            <div class="text-center mb-12 max-w-2xl	mx-auto">
+        <section class="teams container mx-auto px-3 lg:px-12 pt-10 md:pt-20 lg:pt-36">
+            <div class="text-center mb-12 max-w-2xl	mx-auto ">
                 <h2 class="text-2xl lg:text-5xl font-extrabold mb-8">Why Choose Us</h2>
                 <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has
                     roots in a piece of classical Latin literature from 45 BC,
@@ -683,7 +687,7 @@
             <a class="link link-hover">My Account </a>
         </div>
         <div>
-            <div class="block md:grid grid-flow-col gap-14 text-4xl space-x-5 space-y-5">
+            <div class="block md:grid grid-flow-col gap-14 text-4xl space-x-5 space-y-5 md:space-y-0">
                 <a href="#"> <i class="fa-brands fa-twitter"></i></a>
                 <a href="#"> <i class="fa-brands fa-facebook"></i></a>
                 <a href="#"> <i class="fa-brands fa-youtube"></i></a>
